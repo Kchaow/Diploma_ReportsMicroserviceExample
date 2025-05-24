@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@ContractProvider
+//@ContractProvider
 public class ReportsController {
 //public class ReportsController implements SendDataForReportContract {
 //    @Override
