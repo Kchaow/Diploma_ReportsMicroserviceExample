@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@ContractProvider
-public class ReportsController {
-//public class ReportsController implements SendDataForReportContract {
-//    @Override
+@ContractProvider
+//public class ReportsController {
+public class ReportsController implements SendDataForReportContract {
+    @Override
     @PostMapping("/reports/generate")
     public ResponseEntity<Void> sendDataForReport(@RequestBody ReportDto reportDto) {
         return ResponseEntity.ok().build();
